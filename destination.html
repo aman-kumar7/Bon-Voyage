@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Bon Voyage - Destination</title>
+<link href="https://fonts.googleapis.com/css?family=Bitter|Dancing+Script|Fira+Sans|Open+Sans|Gloria+Hallelujah|M+PLUS+1p|Lato|Josefin+Slab|Istok+Web|Indie+Flower|Montserrat|Raleway|Amatic+SC|Caveat|Dancing+Script|Indie+Flower|Kalam|Shadows+Into+Light|Nothing+You+Could+Do&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+ 
+   
+<style>
+body{
+ background-image: url(destination-single1.jpg);
+    background-size:100% 30%;
+    background-repeat:no-repeat;
+    font-family: sans-serif;
+margin:0;
+}
+.topnav{
+position: relative; 
+text-decoration:none;
+font-size:20px;
+font-family: 'Fira Sans','Montserrat', sans-serif;
+text-align:right;
+margin:2% 10% 10px 0;
+background-color:transparent;
+}
+
+
+.topnav a{
+text-decoration:none;
+font-size:18px;
+font-family: 'Montserrat', sans-serif;
+color:white;
+text-align:right;
+padding-top:2%;
+margin:20px 15px 15px 20px;
+}
+
+.join
+{ 
+   
+    border: 1.7px solid white;
+    outline: none;
+    height: 40px;
+    width: 200px;
+    background:transparent;
+    color: #fff;
+    font-size: 20px;
+    border-radius:25px;
+    margin:5% 0 0 40%;
+   font-family: 'Open Sans',,'Istok Web','Josefin Slab',sans-serif;
+}
+.join:hover{
+    cursor: pointer;
+    background: #F9072C;
+    color:#fff ;
+}
+@media screen and (max-width: 1450px) {
+body{
+ background-size: 100% 25%;
+ transition:1s;
+}
+#container{
+padding:20% 10% 10% 10%;
+}
+q{
+padding:0 0 0 5%;
+justify-content: center;
+display: flex;
+}
+}
+
+
+@media screen and (max-width: 950px) {
+body{
+ background-size: 100% 20%;
+ transition:1s;
+}
+#container{
+padding:50% 10% 10% 10%;
+transition:2s;
+}
+q{
+padding:0;
+justify-content: center;
+display: flex;
+
+}
+}
+@media screen and (max-width: 750px) {
+#container{
+padding:70% 10% 10% 10%;
+transition:2s;
+}
+h2{
+
+margin:5% 0 0 0;
+width:10px;
+
+}
+}
+@media screen and (max-width: 650px) {
+  .topnav a{
+    display: none;
+z-index:2;
+  }
+  .topnav a.icon {
+    color:white;
+    float: right;
+    display: block;
+    text-decoration:none;
+  }
+}
+@media screen and (max-width: 650px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}  
+}
+
+
+#about
+{
+margin:20px 10% 20px 30%;
+}
+
+h1{
+font-family:'Nothing You Could Do','Kalam', sans-serif;
+margin:5% 0 3% 0;
+padding-top:5%;
+font-size:80px;
+padding-bottom:0;
+text-align:center;
+}
+p{
+font-family: 'Raleway', sans-serif;
+color:grey;
+font-size:24px;
+line-height:2;
+}
+h2{
+justify-content: center;
+align-items: center;
+display: flex;
+font-family: 'Open Sans','Indie Flower';
+font-size:30px;
+margin:5% 0 0 24%;
+opacity:0.8;
+color:#000;
+width:600px;
+font-weight:bold;
+}
+#container{
+padding:20% 10% 10% 10%;
+}
+footer{
+  margin: 0 0 0 0;
+  background-color: #000;
+  padding: 10px;
+  color:white;
+  text-align:center;
+ width:100%;
+}
+
+h3{
+font-size:40px;
+font-family:'Nothing You Could Do';
+margin:-1.2% 0 0 4%;
+color:#fff;
+float:left;
+}
+h4
+{
+font-family: 'Raleway', sans-serif;
+font-size:20px;
+color:grey;
+text-align:left;
+padding-left:10px;
+}
+
+h5
+{
+align-items: center;
+display: flex;
+font-family:'Open Sans', sans-serif;
+font-size:30px;
+color:#3366ff;
+text-align:center;
+margin-bottom:-30px;
+width:600px;
+margin-left:25%;
+margin-top:10%;
+}
+
+
+h6
+{
+font-family: 'Raleway', sans-serif;
+font-size:15px;
+color:grey;
+text-align:center;
+padding-left:10px;
+margin-top:-20px;
+opacity:0.7;
+}
+span {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    color: white;
+  }
+
+q{
+color:#fff;
+font-size:58px;
+text-align:center;
+margin:0 0 0 27%;
+font-family: 'Amatic SC','Roboto Mono', monospace;
+}
+#writer{
+color:#fff;
+font-size:20px;
+text-align:center;
+margin:5px 0 0 45%;
+font-family: 'Roboto Mono', monospace;
+}
+.loginman {
+    width:300px;
+    height:300px;
+    border-radius: 50%;
+    margin:7% 0 0 38%;
+ }
+#about
+{
+font-family: 'Raleway', sans-serif;
+color:grey;
+font-size:20px;
+margin:20px 25% 20px 30%;
+}
+span{
+opacity:0.8;
+}
+.topnav .icon {
+  display: none;
+}
+.learn{
+text-decoration:none;
+color:#fff;
+}
+
+.img-fluid{
+width:95%;
+height:60vh;
+border-radius:15px;
+
+}
+.img{
+
+overflow: hidden;
+max-width: 95%;
+max-height:60vh;
+margin:10px 0 10px 0;
+border-radius:15px;
+}
+.img-fluid:hover{
+ transform: scale(1.06); 
+transition:2s;
+}
+
+.img-head{
+width:95%;
+height:100vh;
+border-radius:5px;
+}
+.footer_area {
+  margin-top:100px;
+  background: #000;
+  height:20vh;
+  margin-bottom:0;
+  padding-top:50px;
+ }
+
+
+.ab_widget p {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Roboto", sans-serif;
+  color: #777777;
+  margin-bottom: 30px; }
+  .ab_widget p a {
+    color: #fa333f; }
+  .ab_widget p + p {
+    margin-bottom: 0px; }
+
+.social_widget{
+  
+  font-family: "Roboto", sans-serif;
+  color: #777777;
+  margin: 0 0 0 16%;
+   }
+
+.social_widget .list li {
+  padding-right:30px;
+ display: inline-block;
+
+  }
+
+  .social_widget .list li a {
+    color: #cccccc;
+    font-size: 25px;
+    transition: all 300ms linear 0s; 
+ }
+  
+  .social_widget .list li:hover a {
+    color: #fa333f; }
+
+.copy_right_text {
+  text-align: center;
+  margin-top: 60px; }
+  .copy_right_text p a {
+    color: #fa333f; }
+
+.destination{
+margin-top:25%;
+}
+</style>
+ <script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.documentElement.scrollTop > 90) {
+    document.getElementById("top").style.padding = "60px 100px 2.5% 0";
+    document.getElementById("top").style.margin = "-100px 20px 0 0";
+    document.getElementById("a1").style.color = "black";
+    document.getElementById("a2").style.color = "black";
+    document.getElementById("a3").style.color = "black";
+    document.getElementById("a4").style.color = "black";
+    document.getElementById("a5").style.color = "black";
+    document.getElementById("pagename").style.color = "black";
+    document.getElementById("top").style.backgroundColor = "#fff";
+    document.getElementById("top").style.position = "fixed";
+    document.getElementById("top").style.width = "100%";
+    document.getElementById("top").style.zIndex = "2";
+    document.getElementById("top").style.transition= "4s";
+    document.getElementById("top").style.transitionDelay = "2s";
+    document.getElementById("top").style.transitionProperty = "height";
+    document.getElementById("top").style.boxShadow = "5px 10px 20px grey"; 
+     document.getElementById("ca").style.color = "black";              
+  } else {
+    document.getElementById("top").style= "none";
+    document.getElementById("a1").style.color = "#fff";
+    document.getElementById("a2").style.color = "#fff";
+    document.getElementById("a3").style.color = "#fff";
+    document.getElementById("a4").style.color = "#fff";
+    document.getElementById("a5").style.color = "#fff";
+    document.getElementById("pagename").style.color ="#fff";
+    document.getElementById("top").style.transitionDelay = "40ms";
+    document.getElementById("ca").style.color = "white";
+    
+  }
+}
+function myFunction() {
+  var x = document.getElementById("top");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+    document.getElementById("top").style.padding = "50px 0 0 0";
+    document.getElementById("top").style.margin = "-100px 20px 0 0";
+    document.getElementById("a1").style.color = "black";
+    document.getElementById("a2").style.color = "black";
+    document.getElementById("a3").style.color = "black";
+    document.getElementById("a4").style.color = "black";
+    document.getElementById("a5").style.color = "black";
+    document.getElementById("ca").style.color = "black";
+    document.getElementById("top").style.backgroundColor = "#fff";
+    document.getElementById("top").style.position = "fixed";
+    document.getElementById("top").style.width = "100%";
+    document.getElementById("top").style.zIndex = "3";
+    document.getElementById("top").style.transition= "4s";
+    document.getElementById("top").style.transitionDelay = "2s";
+    document.getElementById("top").style.transitionProperty = "height";
+    document.getElementById("top").style.boxShadow = "5px 10px 20px grey";                  
+  } else {
+    x.className = "topnav";
+ }
+}
+
+ </script>
+<link href="https://fonts.googleapis.com/css?family=Bitter|Dancing+Script|Fira+Sans|Open+Sans|Gloria+Hallelujah|M+PLUS+1p|Lato|Josefin+Slab|Istok+Web|Indie+Flower|Montserrat|Raleway|Amatic+SC|Caveat|Dancing+Script|Indie+Flower|Kalam|Shadows+Into+Light|Nothing+You+Could+Do&display=swap" rel="stylesheet">
+<title>Bon Voyage</title>
+</head>
+<body>
+<section>
+
+<nav class="topnav" id="top">
+       
+        <a href="index.html"  id="a1">Home</a>
+         <a href="#destination" id="a2">Destination</a>
+        <a href="hotel.html"  id="a3">Hotel</a>
+        <a href="restaurant.html"  id="a4">Restaurant</a>
+        <a href="#contact" id="a5">Contact</a>
+         <h3 id="pagename">Bon Voyage</h3>
+        <a href="javascript:void(0);" style="font-size:25px;" class="icon" onclick="myFunction()" id="ca">&#9776;</a>    
+</nav>  
+<h1 style="color:white">Discover new palce</h1>
+<q>Not all those who wander are lost.</q><p id="writer">-J.R.R. Tolkien</p>
+</section>
+<br><br><br><br><br><br>
+ <section class="destination">
+    	<div class="container">
+    		<div class="row">
+          <div class="col-md-12 text-center"><br><br>
+          	<br><br><h6>Best Destination</h6>
+            <h2>Best Place to Travel</h2><br>
+            <p>What a glorious greeting the sun gives the mountains</p>
+          </div>
+        </div>
+    		<div class="row">
+    			<div class="col-sm-4">
+    				<div class="project">
+    					<div class="img">
+    						
+		    				<a href="destination.html"><img src="destination-1.jpg" class="img-fluid" alt="Destination"></a>
+	    				</div>
+	    				<div class="text">
+	    					<h4 class="price">Rs. 50,000</span></h4>
+	    					<span>15 Days Tour</span>
+	    					<h4><a href="destination.html">Amalfi, Italy</a></h4>
+	    					
+	    				</div>
+	    				 
+    				</div>
+    			</div>
+    			<div class="col-sm-4">
+    				<div class="project">
+    					<div class="img">
+		    				<a href="destination.html"><img src="bg_25.jpg" class="img-fluid" alt="Destination"></a>
+	    				</div>
+	    				<div class="text">
+	    					<h4 class="price">Rs. 50,000</h4>
+	    					<span>15 Days Tour</span>
+	    					<h4><a href="destination.html">Agra, India</a></h4>
+	    					
+	    				</div>
+	    				
+    				</div>
+    			</div>
+    			<div class="col-sm-4">
+    				<div class="project">
+    					<div class="img">
+		    				<a href="destination.html"><img src="bg-26.jpg" class="img-fluid" alt="Destination"></a>
+	    				</div>
+	    				<div class="text">
+	    					<h4 class="price">Rs. 40,000</h4>
+	    					<span>15 Days Tour</span>
+	    					<h4><a href="destination.html">Rome, Italy</a></h4>
+	    					
+	    				</div>
+	    				
+    				</div>
+    			</div>
+    			<div class="col-sm-4">
+    				<div class="project">
+    					<div class="img">
+		    				<a href="destination.html"><img src="bg-22.jpg" class="img-fluid" alt="Destination"></a>
+	    				</div>
+	    				<div class="text">
+	    					<h4 class="price">Rs. 40,000</h4>
+	    					<span>15 Days Tour</span>
+	    					<h4><a href="destination.html">The Great Wall, China</a></h4>
+	    					
+	    				</div>
+	    				
+    				</div>
+    			</div>
+    			<div class="col-sm-4">
+    				<div class="project">
+    					<div class="img">
+		    				<a href="destination.html"><img src="destination-7.jpg" class="img-fluid" alt="Destination"></a>
+	    				</div>
+	    				<div class="text">
+	    					<h4 class="price">Rs 40,000</h4>
+	    					<span>15 Days Tour</span>
+	    					<h4><a href="destination.html">Paris, France</a></h4>
+	    					
+	    				</div>
+	    				
+    				</div>
+    			</div>
+    			<div class="col-sm-4">
+    				<div class="project">
+    					<div class="img">
+		    				<a href="destination.html"><img src="destination-13.jpg" class="img-fluid" alt="Destination"></a>
+	    				</div>
+	    				<div class="text">
+	    					<h4 class="price">Rs. 40,000</h4>
+	    					<span>15 Days Tour</span>
+	    					<h4><a href="destination.html">Pyramids, Egypt</a></h4>
+	    					
+	    				</div>
+	    				
+	    				</a>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+<!-- Footer -->
+ <footer class="footer_area text-center">
+        	<div class="container">
+        		<div class="row footer_inner">
+        			<div class="col-lg-8 col-xs-10 social_widget">
+        			
+        					<ul class="list">
+        						<li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+        						<li><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
+        						<li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+        						<li><a href="https://github.com/" target="_blank"><i class="fa fa-github"></i></a></li>
+
+        					</ul>
+        			</div>
+        		</div>
+        	</div>
+ <div class="row">
+         <div class="col-md-12 f_widget ab_widget">
+           <div class="border-top pt-5 ">
+            <p>
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This website is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="#" target="_blank" >Voyage</a>
+           </p>
+           </div>
+        </div>
+     </div>
+  </footer>
+
+</body>
+</html>
