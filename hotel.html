@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Bon Voyage - Hotel</title>
+
+<link href="https://fonts.googleapis.com/css?family=Pinyon+Script|Sacramento|Bitter|Dancing+Script|Fira+Sans|Open+Sans|Gloria+Hallelujah|M+PLUS+1p|Lato|Josefin+Slab|Istok+Web|Indie+Flower|Montserrat|Raleway|Amatic+SC|Caveat|Dancing+Script|Indie+Flower|Kalam|Shadows+Into+Light|Nothing+You+Could+Do&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+ 
+   
+<link rel="stylesheet" href="bootstrap-datepicker.css">
+<style>
+body{
+ background-image:linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0,0.5)),url(bg_9.jpg);
+    background-size:100% 20%;
+    background-repeat:no-repeat;
+    font-family: sans-serif;
+margin:0;
+}
+.topnav{
+position: relative; 
+text-decoration:none;
+font-size:20px;
+font-family: 'Fira Sans','Montserrat', sans-serif;
+text-align:right;
+margin:2% 10% 10px 0;
+background-color:transparent;
+}
+
+
+.topnav a{
+text-decoration:none;
+font-size:18px;
+font-family: 'Montserrat', sans-serif;
+color:white;
+text-align:right;
+padding-top:2%;
+margin:20px 15px 15px 20px;
+}
+
+@media screen and (max-width: 1250px) {
+  .topnav a{
+    display: none;
+z-index:2;
+  }
+
+#top{
+padding-bottom:-10%;
+}
+  .topnav a.icon {
+    color:white;
+    float: right;
+    display: block;
+    text-decoration:none;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;
+
+}  
+.hotel{
+margin-top:35%;
+}
+}
+@media screen and (max-width: 900px) {
+h3{
+padding-top:4%;
+}
+h1{
+padding-top:30%;
+font-size:60px;
+}
+q{
+font-size:50px;
+margin-left:15%;
+}
+.hotel{
+margin-top:40%;
+}
+}
+@media screen and (max-width: 700px) {
+h3{
+padding-top:4%;
+}
+h1{
+padding-top:30%;
+font-size:45px;
+}
+
+.hotel{
+margin-top:35%;
+}
+}
+
+p{
+font-family: 'Raleway', sans-serif;
+color:grey;
+font-size:24px;
+line-height:2;
+}
+h1{
+font-family:'Pinyon Script','Sacramento','Nothing You Could Do','Kalam','Shadows Into Light','Amatic SC','Gloria Hallelujah', cursive,'Dancing Script', cursive,Bitter, sans-serif;
+margin:5% 0 3% 0;
+padding-top:5%;
+font-size:90px;
+padding-bottom:0;
+text-align:center;
+}
+
+h2{
+justify-content: center;
+align-items: center;
+display: flex;
+font-family: 'Open Sans','Indie Flower';
+font-size:30px;
+margin:5% 0 0 24%;
+opacity:0.8;
+color:#000;
+width:600px;
+font-weight:bold;
+}
+
+h3{
+font-size:40px;
+font-family:'Nothing You Could Do';
+margin:-1.2% 0 0 4%;
+color:#fff;
+float:left;
+}
+h4
+{
+font-family: 'Raleway', sans-serif;
+font-size:20px;
+color:grey;
+text-align:center;
+padding-left:10px;
+}
+h5
+{
+justify-content: center;
+align-items: center;
+display: flex;
+font-family:'Open Sans', sans-serif;
+font-size:30px;
+color:#3366ff;
+text-align:center;
+margin-bottom:-30px;
+width:600px;
+margin-left:25%;
+margin-top:10%;
+}
+
+h6
+{
+font-family: 'Raleway', sans-serif;
+font-size:15px;
+color:grey;
+text-align:center;
+padding-left:10px;
+margin-top:-20px;
+opacity:0.7;
+}
+span {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    color: white;
+  }
+
+
+
+span{
+opacity:0.8;
+}
+.topnav .icon {
+  display: none;
+}
+
+#a0
+{
+margin:0 0 0 4%;
+text-align:left;
+}
+.img-fluid{
+width:95%;
+height:40vh;
+border-radius:5px;
+
+}
+
+.img-fluid1{
+width:95%;
+height:60vh;
+border-radius:5px;
+overflow:hidden;
+}
+
+ .img:hover{
+ transform: scale(1.06); 
+transition:2s;
+}
+.img{
+overflow: hidden;
+max-width: 95%;
+max-height:60vh;
+margin:10px 0 10px 0;
+
+}
+
+.img-head{
+width:95%;
+height:100vh;
+border-radius:5px;
+}
+.footer_area {
+  background: #000;
+  height:20vh;
+  margin-bottom:0;
+  padding-top:50px;
+  margin-top:10%;
+ }
+
+
+.ab_widget p {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Roboto", sans-serif;
+  color: #777777;
+  margin-bottom: 30px; }
+  .ab_widget p a {
+    color: #fa333f; }
+  .ab_widget p + p {
+    margin-bottom: 0px; }
+
+.social_widget{
+  
+  font-family: "Roboto", sans-serif;
+  color: #777777;
+  margin: 0 0 0 16%;
+   }
+
+.social_widget .list li {
+  padding-right:30px;
+ display: inline-block;
+
+  }
+
+  .social_widget .list li a {
+    color: #cccccc;
+    font-size: 25px;
+    transition: all 300ms linear 0s; 
+ }
+  
+  .social_widget .list li:hover a {
+    color: #fa333f; }
+
+.copy_right_text {
+  text-align: center;
+  margin-top: 60px; }
+  .copy_right_text p a {
+    color: #fa333f; }
+.subheading{
+color:grey;
+}
+</style>
+ <script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.documentElement.scrollTop > 90) {
+    document.getElementById("top").style.padding = "60px 100px 2.5% 0";
+    document.getElementById("top").style.margin = "-100px 20px 0 0";
+    document.getElementById("a1").style.color = "black";
+    document.getElementById("a2").style.color = "black";
+    document.getElementById("a3").style.color = "black";
+    document.getElementById("a4").style.color = "black";
+    document.getElementById("a5").style.color = "black";
+    document.getElementById("a6").style.color = "black";
+    document.getElementById("pagename").style.color = "black";
+    document.getElementById("top").style.backgroundColor = "#fff";
+    document.getElementById("top").style.position = "fixed";
+    document.getElementById("top").style.width = "100%";
+    document.getElementById("top").style.zIndex = "2";
+    document.getElementById("top").style.transition= "4s";
+    document.getElementById("top").style.transitionDelay = "2s";
+    document.getElementById("top").style.transitionProperty = "height";
+    document.getElementById("top").style.boxShadow = "5px 10px 20px grey"; 
+     document.getElementById("ca").style.color = "black";              
+  } else {
+    document.getElementById("top").style= "none";
+    document.getElementById("a1").style.color = "#fff";
+    document.getElementById("a2").style.color = "#fff";
+    document.getElementById("a3").style.color = "#fff";
+    document.getElementById("a4").style.color = "#fff";
+    document.getElementById("a5").style.color = "#fff";
+    document.getElementById("a6").style.color = "#fff";
+     document.getElementById("pagename").style.color ="#fff";
+    document.getElementById("top").style.transitionDelay = "40ms";
+     document.getElementById("ca").style.color = "white";
+    
+  }
+}
+function myFunction() {
+  var x = document.getElementById("top");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+    document.getElementById("top").style.padding = "50px 0 0 0";
+    document.getElementById("top").style.margin = "-100px 20px 0 0";
+    document.getElementById("a1").style.color = "black";
+    document.getElementById("a2").style.color = "black";
+    document.getElementById("a3").style.color = "black";
+    document.getElementById("a4").style.color = "black";
+    document.getElementById("a5").style.color = "black";
+    document.getElementById("a6").style.color = "black";
+    document.getElementById("ca").style.color = "black";
+    document.getElementById("top").style.backgroundColor = "#fff";
+    document.getElementById("top").style.position = "fixed";
+    document.getElementById("top").style.width = "100%";
+    document.getElementById("top").style.zIndex = "3";
+    document.getElementById("top").style.transition= "4s";
+    document.getElementById("top").style.transitionDelay = "2s";
+    document.getElementById("top").style.transitionProperty = "height";
+    document.getElementById("top").style.boxShadow = "5px 10px 20px grey";                  
+  } else {
+    x.className = "topnav";
+ }
+}
+
+ </script>
+<link href="https://fonts.googleapis.com/css?family=Bitter|Dancing+Script|Fira+Sans|Open+Sans|Gloria+Hallelujah|M+PLUS+1p|Lato|Josefin+Slab|Istok+Web|Indie+Flower|Montserrat|Raleway|Amatic+SC|Caveat|Dancing+Script|Indie+Flower|Kalam|Shadows+Into+Light|Nothing+You+Could+Do&display=swap" rel="stylesheet">
+<title>Bon Voyage</title>
+</head>
+<body>
+<section>
+
+<nav class="topnav" id="top">
+       
+        <a href="index.html"  id="a1">Home</a>
+         <a href="#" id="a2">Services</a>
+        <a href="destination.html"  id="a3">Destination</a>
+        <a href="hotel.html"  id="a4">Hotel</a>
+         <a href="restaurant.html" id="a5">Restaurant</a>
+        <a href="#contact" id="a6">Contact</a>
+         <h3 id="pagename">Bon Voyage</h3>
+        <a href="javascript:void(0);" style="font-size:25px;" class="icon" onclick="myFunction()" id="ca">&#9776;</a>    
+</nav>  
+<h1 style="color:white">Enjoy a Luxury Stay<br><br><br>Hotel</h1>
+
+</section>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+ <section id="hotel-section" class="hotel">
+    				
+		<div class="container">
+    		<div class="row">
+          <div class="col-md-12 text-center">
+          <br><br>	
+            <h6><span class="subheading">Suggested Hotel</span>
+            <h2 class="mb-4">Find Nearest Hotel</h2></h6>
+            <p>Discover a hotel that defines a new dimension of luxury.</p>
+          </div>
+        </div>	
+    	<div class="row">
+    			<div class="col-md-6 col-lg-4">
+    		
+    					<div class="img">
+    						
+		    				<a href="hotel.html"><img src="hotel-1.jpg" class="img-fluid1" alt="Hotels"></a>
+	    				</div>
+	    				<div class="text">
+	    					<h4 class="price">Rs. 25,000</h4>
+	    					<span>3 Days 2 Nights</span>
+	    					<h4><a href="hotel.html">The Plaza, New York</a></h4>
+	    					
+	    				</div>
+	    				
+    				
+    			</div>
+    			<div class="col-md-6 col-lg-4">
+    				
+    					<div class="img">
+		    				<a href="hotel.html"><img src="hotel-2.jpg" class="img-fluid1" alt="Hotels"></a>
+	    				</div>
+	    				<div class="text">
+	    					<h4 class="price">Rs. 50,000</h4>
+	    					<span>3 Days 2 Nights</span>
+	    					<h4><a href="hotel.html">Hotel Ritz, Paris</a></h4>
+	    					
+	    				</div>
+	    				
+    				
+    			</div>
+                        <div class="col-md-6 col-lg-4">
+    				
+    					<div class="img">
+		    				<a href="hotel.html"><img src="hotel-7.jpg" class="img-fluid1" alt="Hotels"></a>
+	    				</div>
+	    				<div class="text">
+	    					<h4 class="price">Rs. 50,000</h4>
+	    					<span>3 Days 2 Nights</span>
+	    					<h4><a href="hotel.html">Claridge's , London</a></h4>
+	    					
+	    				</div>
+	    				
+    				
+    			</div>
+                                    <div class="col-md-6 col-lg-4">
+    				
+    					<div class="img">
+		    				<a href="hotel.html"><img src="hotel-8.jpg" class="img-fluid1" alt="Hotels"></a>
+	    				</div>
+	    				<div class="text">
+	    					<h4 class="price">Rs. 50,000</h4>
+	    					<span>3 Days 2 Nights</span>
+	    					<h4><a href="hotel.html">Raffles , Singapore</a></h4>
+	    					
+	    				</div>
+	    				
+    				
+    			</div>
+                                    <div class="col-md-6 col-lg-4">
+    				
+    					<div class="img">
+		    				<a href="hotel.html"><img src="hotel-4.jpg" class="img-fluid1" alt="Hotels"></a>
+	    				</div>
+	    				<div class="text">
+	    					<h4 class="price">Rs. 50,000</h4>
+	    					<span>3 Days 2 Nights</span>
+	    					<h4><a href="hotel.html">Peninsula , Hong Kong</a></h4>
+	    					
+	    				</div>
+	    				
+    				
+    			</div>
+    			<div class="col-md-6 col-lg-4 ftco-animate">
+    				
+    					<div class="img">
+		    				<a href="hotel.html"><img src="hotel-3.jpg" class="img-fluid1" alt="Hotels"></a>
+	    				</div>
+	    				<div class="text">
+	    					<h4 class="price">Rs. 30,000</h4>
+	    					<span>3 Days 2 Nights</span>
+	    					<h4><a href="hotel.html">Beverly Hills Hotel, Los Angeles</a></h4>
+	    					
+	    				</div>
+	    				
+    				
+    			</div>
+
+
+
+    			<div class="row">
+    		<div class="col-md-12 text-center">
+          <br><br>	
+            <h6><span class="subheading">Rooms and Suits</span>
+            <h2 class="mb-4">Find a luxrurious Room</h2></h6>
+            <p>Discover a hotel that defines a new dimension of luxury.</p>
+          </div>
+       
+    			<div class="col-md-6 col-lg-4">
+    				
+    					<div class="img1">
+    						
+		    				<a href="hotel.html"><img src="room-1.jpg" class="img-fluid" alt="Hotels"></a>
+	    				</div>
+	    				<div class="text">
+	    					<h4 class="price">Rs. 25,000/Day</h4>
+	    					<h4><a href="hotel.html">Family Room</a></h4>
+	    					
+	    				</div>
+	    				
+    			</div>
+<div class="col-md-6 col-lg-4">
+    				
+    					<div class="img1">
+    						
+		    				<a href="hotel.html"><img src="room-2.jpg" class="img-fluid" alt="Hotels"></a>
+	    				</div>
+	    				<div class="text">
+	    					<h4 class="price">Rs. 25,000/Day</h4>
+	    					
+	    					<h4><a href="hotel.html">Luxury Room</a></h4>
+	    					
+	    				</div>
+	    				
+    				
+    			</div>
+<div class="col-md-6 col-lg-4">
+    				
+    					<div class="img1">
+    						
+		    				<a href="hotel.html"><img src="room-3.jpg" class="img-fluid" alt="Hotels"></a>
+	    				</div>
+	    				<div class="text">
+	    					<h4 class="price">Rs. 25,000/Day</h4>
+	    					
+	    					<h4><a href="hotel.html">Double Room</a></h4>
+	    					
+	    				</div>
+	    				
+    				
+    			</div>
+<div class="col-md-6 col-lg-4">
+    				<div class="project">
+    					<div class="img1">
+    						
+		    				<a href="hotel.html"><img src="room-4.jpg" class="img-fluid" alt="Hotels"></a>
+	    				</div>
+	    				<div class="text">
+	    					<h4 class="price">Rs. 25,000/Day</h4>
+	    					
+	    					<h4><a href="hotel.html">Suite Room</a></h4>
+	    					
+	    				</div>
+	    				
+    				</div>
+    			</div>
+    			<div class="col-md-6 col-lg-4">
+    				
+    					<div class="img1">
+		    				<a href="hotel.html"><img src="img_2.jpg" class="img-fluid" alt="Hotels"></a>
+	    				</div>
+	    				<div class="text">
+	    					<h4 class="price">Rs. 50,000/Day</h4>
+	    					
+	    					<h4><a href="hotel.html">Superior Double Room</a></h4>
+	    					
+	    				
+	    				
+    				</div>
+    			</div>
+    			<div class="col-md-6 col-lg-4">
+    				
+    					<div class="img1">
+		    				<a href="hotel.html"><img src="room-8.jpg" class="img-fluid" alt="Hotels"></a>
+	    				</div>
+	    				<div class="text">
+	    					<h4 class="price">Rs. 30,000/Day</h4>
+	    				
+	    					<h4><a href="hotel.html">Classic Double Room</a></h4>
+	    					
+	    				</div>
+	    			</div>	
+    				
+    			
+    		</div>
+    <div class="search-wrap-1 ">
+    					<h2 class="text-center">Find Hotels</h2><br><br>
+							<form action="#" >
+		        		<div class="row">
+		        			<div class="col-lg-6 align-items-end mb-3">
+		        				<div class="form-group">
+		        					<label for="#">Hotels</label>
+		          				<div class="form-field">
+		          					<div class="icon"><span class="ion-ios-search"></span></div>
+				                <input type="text" class="form-control" placeholder="Search place">
+				              </div>
+			              </div>
+		        			</div>
+                                   <div class="col-lg-6 align-items-end mb-3">
+		        				<div class="form-group">
+		        					<label for="#">Price Limit</label>
+		        					<div class="form-field">
+		          					<div class="select-wrap">
+		                      <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+		                      <select name="" id="" class="form-control">
+		                        <option value="">$5,000</option>
+		                        <option value="">$10,000</option>
+		                        <option value="">$50,000</option>
+		                        <option value="">$100,000</option>
+		                        <option value="">$200,000</option>
+		                        <option value="">$300,000</option>
+		                        <option value="">$400,000</option>
+		                        <option value="">$500,000</option>
+		                        
+		                      </select>
+		                    </div>
+				              </div>
+			              </div>
+		        			</div>
+		        			<div class="col-lg-6 align-items-end mb-3">
+		        				<div class="form-group">
+		        					<label for="#">Check-in date</label>
+		        					<div class="form-field">
+                                                                 <i class="icon icon-calendar2"></i>
+		          					
+                                                                <input type="date" id="date" class="form-control date" placeholder="Check-in date">
+				              </div>
+			              </div>
+		        			</div>
+		        			<div class="col-lg-6 align-items-end mb-3">
+		        				<div class="form-group">
+		        					<label for="date">Check-out date</label>
+		        					<div class="form-field">
+                                                                 <i class="icon icon-calendar2"></i>
+		          					
+				                  <input type="date" id="date" class="form-control date" placeholder="Check-out date">
+				              </div>
+			              </div>
+		        			</div>
+		        			
+		        			<div class="col-lg-1 align-self-end">
+		        				<div class="form-group">
+		        					<div class="form-field">
+				                <input type="submit" value="Search" class="form-control btn btn-primary">
+				              </div>
+			              </div>
+		        			</div>
+		        		</div>
+		        	</form>
+		        </div>
+    			
+
+
+    		</section>
+<!-- Footer -->
+ <footer class="footer_area text-center" id="contact">
+        	<div class="container">
+        		<div class="row footer_inner">
+        			<div class="col-lg-8 col-xs-10 social_widget">
+        			
+        					<ul class="list">
+        						<li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+        						<li><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
+        						<li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+        						<li><a href="https://github.com/" target="_blank"><i class="fa fa-github"></i></a></li>
+
+        					</ul>
+        			</div>
+        		</div>
+        	</div>
+ <div class="row pt-5 mt-5 text-center">
+         <div class="col-md-12 f_widget ab_widget">
+           <div class="border-top pt-5 ">
+            <p>
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This website is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="#" target="_blank" >Voyage</a>
+           </p>
+           </div>
+        </div>
+     </div>
+  </footer>
+
+</body>
+</html>
